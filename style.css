@@ -1,0 +1,74 @@
+.title {
+    display: -webkit-flex;
+    display: flex;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+
+body {
+    padding: 20px 10px;
+    font-family: arial;
+    max-width: 2000px;
+    margin: 0 auto; 
+    font-size: 1.4em;
+    text-align: justify;
+    text-justify: inter-word;
+}                 
+
+h1 {
+    text-align: center;
+    color: #7021C5;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+.lesson {
+    background-color: rgb(59, 22, 121);
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.lesson-title {
+    font-size: 30px;
+    text-align: left;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.concept-title {
+    font-size: 28px;
+    margin: 8px;
+    text-align: center;
+    color: rgb(123, 38, 181);
+}
+
+.concept {
+    background-color: #CEC6EC;
+   padding: 4px;
+    margin: 10px;
+    border-radius: 4px;
+   color: black;
+}
+
+.concept-description {
+    font-weight: lighter;
+    margin: 6px;
+}
+
+span.code {
+    font-family: Courier;
+    background-color: #DADADA;
+    padding: 2px 4px;
+    font-weight: bold;
+}
