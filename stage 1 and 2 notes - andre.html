@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+ <title>Andre's Notes</title>
+</head>
+
+<body>
+
+<h1>FUNDAMENTALS OF THE WEB</h1>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 1: THE BASICS OF THE WEB AND HTML</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Introduction</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      There are at least five important subjetcs to be studied as basic elements on the web:<em> the web itself, the code language HTML, the repository URL, the protocol HTTP and proper web aplications</em>. First of all the web - or world wide web.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>The World Wide Web</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        The <em>World Wide Web</em> is a collection of HTML documents, which stands for <em>Hypertext Markup Language</em>. The documents are all linked to one another throught <em>Hyper Links</em>. All kinds of file can exist on the web, music, video, images - HTML documents can refer to anything.
+      </p>
+      <p>
+        There are four main actors in the web: <em>users, computers + browsers, the internet itself and servers.</em> The user put up an internet adress on his browser and it makes a request via the internet to the servers, using the HTTP protocol. The servers respond with files displaced by the browser. Servers are computers which host files, and the HTTP is the main protocol used on internet communications. Web documents, as said before, are written in a language called HTML, the next topic.
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+    <div class="concept-title">
+      <b>HTML - Hyper Text Markup Language</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        HTML or <em>Hyper Text Markup Language</em> is the language used to write documents placed on the web. It is made of four components: <em>text content</em>, or the text that can be seen; <em>Markup</em>, or what the text looks like; <em>References</em> to other documents; and <em>Links</em> to other pages. Text content is plain text, while markup is used to mark texts up. 
+      </p>
+    </div>
+  </div>
+  
+
+  <div class="concept">
+   <div class="concept-title">
+    <b>HTML Markup</b>
+   </div>
+   <div class="concept-description">
+      <p>
+        Texts are marked up using tags. Usually an <em>element</em> is made of an opening tab, a closing tab and contents, for example:
+      </p>
+      
+      <p>
+        Ex: &lt;name&gt;contents&lt;/name&gt; ----- This is called an <em> element</em>
+      </p> 
+    
+      <p>
+        In an element the contents inside the opening and closing tags are marked up with the effects of that tag. There are several kinds of tags, which one with its own markup effect on text, like the &lt;b&gt; bold tag, &lt;em&gt; emphasis - <em> italics</em> tag, Anchor tags &lt;a&gt;, used to make links, image tags &lt;img&gt;, among others. There are also tags with attributes &lt;tag attr = "value"&gt;, which have values. It is important to say that image tags are void tags, that don´t need a closing tab.
+      </p>
+    </div>
+  </div> 
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Whitespace</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        All that is put in HTML turn in a single space. If a user writes a text in multiple lines, it appears in a single line, in whitespace. It is necessary to force multiple lines using tags. The <em>break tag &lt;br&gt;</em> is the first way. It is a void tag to be used after any line the users wants a break. The other way is with <em>paragrarh tag &lt;p&gt;</em>, which is not a void tag. The main difference between those two tags is that <em>&lt;br&gt;</em> is an <em>inline tag</em>, while <em>&lt;p&gt;</em> is a <em> block</em> one. 
+      </p>  
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Inline and Block elements</b>
+    </div>  
+    <div class="concept-description">
+      <p>
+        Block and inline tags have different behaviour. Inline elements fit within a line, somentimes ending it, like &lt;br&gt; tag. Block tags make and an invisible box around the text, that can have height and width. Examples of inline elements are: &lt;a&gt;, &lt;span&gt;, &lt;br&gt;, &lt;img&gt;, &lt;strong&gt;. Some examples of block elements:  &lt;div&gt;,&lt;p&gt;, &lt;form&gt;.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Container elements</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Containers are elements that contain stuff inside them. There are two container tags: <em>&lt;span&gt;</em> and <em>&lt;div&gt;</em>. Span is an inline element, while div is a block one. They both can use CSS, which is a language to give styles to documents. 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Computers and stupidity</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        It is good to remember that computers are stupid, and that is not a bad thing to say. They are stupid because they only interpret instructions literaly.
+      </p>
+    </div>
+  </div>  
+</div>
+    
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 2: CREATING A STRUCTURED DOCUMENT WITH HTML</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>HTML, CSS and Javascript</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        <em>HTML files</em> are the structure of a webpage, <em>CSS files</em> are the style of a page, and <em>Javascript files</em> are the interactive components of a page. These languages define the rules for how webpages behave.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>HTML, Structure and CSS: tree-like structure</b>
+    </div>
+    <div class="concept-description">
+      <p> 
+        Webpages have branched structures like trees (<em>tree-like structure</em>). Branches are formed in coding, from big elements to small ones. The same structure may result in different looking webpages, depending on the style imprinted by CSS. It is important to remember that <em>HTML</em> and <em>CSS</em> are both <em>languages</em>. HTML controls the structure of a webpage, while CSS controls the style of a page.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>HTML, CSS and the DOM</b>
+    </div>
+    <div class="concept-description">  
+      <p>
+        The DOM is the tree-like structure of a page. HTML is the language of the web. It has a specific syntax and rules. The basic word in the language of HTML is tag. The browser turns <em>tags</em> into elements, forming <em>trees</em>. It knows how to do it because of the <em>DOM</em> 
+      </p>
+      <p>
+        The <em>DOM</em> or <em>Document object module</em> is a form to represent and interact with elements in HTML. The <em>tree-like structure</em> observed in <em>developers tools</em> section of the browser shows a DOM tree that the browser builds from a HTML document. 
+      </p>
+      <p> 
+        Each HTML tag creates an element in the DOM that browsers use to display the page. The content of a tag can be text, empty or even another tag. Every tag has a type or name that defines the element that will be created. Also tags can have attributes with values. With tags HTML documents define the structure and content of a page.
+      </p>
+      <p>
+        To define the style of a page it is necessary to use another language: <em>CSS</em>. CSS allows the use of specific syntax and rules to change how elements look on the page (fonts size, color, background, orders, positions, etc.)
+        <br>Ex: It is possible with CSS to state that all &lt;h1&gt; elements that belong to the class "article" must be dark blue.
+      </p>
+      <p>
+        To tie structure and style together the HTML document can provide the browser with information on what style to use and where to get it.
+      </p>
+    </div>
+  </div>
+  
+  <div class="concept">  
+    <div class="concept-title">
+      <b>Specific Rules of how elements work</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Once the language is known, it is possible to look to the HTML code and get a good understanding of how the page organize and looks like, or, on the other way, how to break down a webpage into code.
+      </p>
+      <p>
+        Everything in a HTML document is <em>retangular</em> - a <em>box</em>. There are other shapes in the world, like circles and triangles, that can be used in code with the help pf CSS styles. It is importante to focus that in a webpage everything is a box! Different shapes are made with style
+      </p>
+      <p>
+        To use HTML one has to think in terms of boxes, asking: how do i draw a box in every element? How do i do it to reach simple elements, like an image or a text? 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Boxify a design</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        The design of the page must be put into boxes, to facilitate the HTML and CSS written work. Any method works to boxify: doodle in paper, print the page, or with ones imagination - the most efficient way must be chosen. A new design must be approached from big boxes to small boxes. Bigger boxes can be filled later with smaller ones.
+      </p>
+      <p> 
+        The <em>&lt;div&gt;</em> tag can be used to define boxes in code. <br>
+        ex: &lt;div&gt;my apps&lt;/div&gt;
+      </p>
+    </div>
+  </div>
+  
+  <div class="concept">  
+    <div class="concept-title">
+      <b>Styles on boxes</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        To put style on boxes it is necessary to use CSS. For each element a <em>class attribute</em> must be given. A <em>class attribute</em> is like a label on a box, something made to remember its content. Boxes can have several labels, as tags, that can belong to multiple classes. It is good to have class names that make sense, that can be understood just by looking at the code.<br>
+        ex: &lt;div class="tittle'"&gt;my apps&lt;/div&gt;
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Text editors (for programming)</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Programming language can be written in any editor, but there are some specific tools for doing it, like sublime editor. When writing code, it is highly recommended the use of a programming text editor. It makes the life of a programmer easier. 
+      </p>
+    </div>
+  </div>
+</div>
+  
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 3: APPLYING STYLES TO HTML WITH CSS</b>
+  </div>
+  <div class="concept">
+    <div class="concept-title"> 
+      <b>CSS</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        CSS stands for <em>Cascading Style Sheets</em>. It is a computer language that tells html files what they should look like. It controls the style of a html document. Cascading means that the most specific rule is applied to every element. 
+      </p>
+      <p>
+        CSS uses <em>selectors</em> to define particulars styles to be applied in each element.
+      </p>
+      <p>
+        An important CSS concept is <em>inheritance</em>, which requires <em>abstract thinking</em>. This concept relies on ancestor-descendent relationship to operate, that can be seen on document trees of an html documents. By this mechanism properties are applied to a specific element and its descendents, just like in biology.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">  
+    <div class="concept-title">
+      <b>Avoidance of repetition</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        In programming it is very important to avoid repetition. A repetition in code may lead to more work, since a little change in something means that all repeated code must be changed also. This may cause trouble and confusion. CSS helps programmers to avoid repetition. Using &lt;div&gt; or other elements it is possible to control all changes in the document appearence with the CSS code, making the job easier and faster. 
+      </p> 
+    </div>
+  </div>
+</div>
+
+
+<h1>TELLING COMPUTERS WHAT TO DO</h1>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 1: INTRODUCTION TO PROGRAMMING</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Computer Science</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      <em>Computer science </em> is about <em>solving problems</em>. It works by breaking a problem into smaller pieces and then precisely and mechanically describing a sequence of steps that can be used to solve each piece. The task is to do that computer follow the steps and solve the problem by itself. 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Computer</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        Machines are usually designed to do just one thing, like a toaster. <em>The universal machine</em>, in other hand, was imagined to do whatever the programmer told it to do, an universal problem solver. <em>Computers</em> are 
+        <em>universal machines</em>. <em>Programs</em> are used to tell a computer what to do. The power in this machine is that it can be programmed to do any sort of computation, the programmer just has to figure out how to program the order.  
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+    <div class="concept-title">
+      <b>Programs</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        <em>Programs</em> tell computers what to do. The program must be a very <em> precise sequence of steps</em>. It is necessary to give instructions in a certain order. The power of the computer is that it can execute billions of instructions in a few seconds, following the sequence of steps very quickly. The program tells the computer which steps to take, and it follows. In order to design a program it is necessary a language to "speak" with the computer.
+      </p>
+    </div>
+  </div>
+  
+
+  <div class="concept">
+   <div class="concept-title">
+    <b>Programming languages - Python</b>
+   </div>
+   <div class="concept-description">
+      <p>
+        Programs need to be designed in a language that can be understood by computers. As said before, computers are stupid, they only understand literal orders. Natural languages have syntatic and semantic problems that create certain difficulties with literal interpretations. One of them is ambiguity - the same sentence can be interpreted in many ways in natural languages. Another one is verbosity - natural languages require many words to describe a complicated situation. That is why a programming language is necessary. the programmer must be sure that the computer interprets the program the exact same way he wanted and programming languages can describe complicated situations in just a few lines of code.       
+      </p>
+      
+      <p>
+        Admiral Grace Hopper (1906-1992), for example, was a pioneer in computer sciences and writing computer languages. She wrote one of the first computer languages, called COBOL, for a long time the most used one. She was also the one of the first to create a compiler, a program that makes programs (at that time many thought computers could only do arithmetic).
+      </p>
+      
+      <p>
+        There are many different languages for programming computers. Python is one that is going to be learned in this course. It is a high-level language to write programs. A high-level language means that instead of the program running directly on the computer, the programs written in python are the input to the python interpreter (which itself is a program), which runs on the computer. 
+      </p> 
+    </div>
+  </div> 
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Interpreter</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        An <em>interpreter</em> is a program that runs others programs written in a certain programming language, interprets and executes them, by running a program in the language that the computer can understand directly - machine language. The python interpreter does that with programs written in python language. The python interpreter can only interpret sentences in python language that it already previously knows. Python has a grammar, like natural languages, in order be possible to communicate - a whole syntactic set of rules to write sentences. 
+      </p>  
+
+      <p>
+      The difference between an interpreter and a compiler, like Admiral Grace Hopper built, is that a compiler does all the work at once, and them runs the new program, whereas on an interpreter the work is done at the same time.  
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Grammar</b>
+    </div>  
+    <div class="concept-description">
+      <p>
+        To create a language is necessary a basic set of rules, <em>a grammar</em> - the computer language grammar must be able to surpass the natural language syntax and semantic problems. John Backus, the lead designer of the fortran computer language for IBM in the fifities, helped to create the <em>Backus-Naur notation form</em>, in order to be able to precisely describe the language, in a way that is very simple and concise. It works with concepts of non-terminal, terminal and derivation to make valid expressions.        
+      </p>
+
+      <p>
+       <em>The Backus-Naur notation form</em> start always with a non-terminal, that throught derivation, following the rules, reaches a terminal, constructing a valid expression. Python uses the Backus-Naur notation form to its grammar.
+      </p>  
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Python grammar and expressions</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Python grammar is much stricter than normal language rules. The code must match the language exactly to get a correct syntax. If it does not, then an error message appears. 
+      </p>
+
+       <p>
+       <em>An expression is something that has a value</em>, a valid sentence constructed with correct grammar rules. A Python expression is a valid Python statement. For example: <span class = "code">print 3 + 5</span> is a valid expression, but <span class = "code">print 3 + 5 +</span> is not.
+      </p> 
+    </div>
+  </div>  
+</div>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 2: VARIABLES AND STRINGS</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Variables in Python</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      <em>A variable</em> is a programmer tool to give <em>names</em> to <em>values</em>. If <span class = "code">monkey</span> is a variable with a value 9, then the code <span class = "code">print monkey</span> would print out the value 9.   
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Assigning values to variables</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        <em>Values</em> can be assigned to <em>variables</em> using the signal <span class = "code">=</span>. Here is an example: <span class = "code">andre_age = 29</span>. This code assignes the value 29 to the variable <span class = "code">andre_age</span>.
+      </p>
+      <p>
+        It is possible to change the value of a variable, simply by re-assigning other value using the same process. 
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+    <div class="concept-title">
+      <b>Meanings of the <span class = "code">=</span> sign in Python</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        The sign <span class = "code">=</span> can have at least two different meanings in Python. The difference can be seen in two lines of code: 
+      </p>
+      <ul>
+          <li>In the line <span class = "code">4 = 4</span>, the <span class = "code">=</span> sign means equality or "is the same as".</li>
+          <li>In the line <span class = "code">andre_age = 29</span>,the <span class = "code">=</span> sign means assignment or "takes the value of".</li>
+      </ul>
+    </div>
+  </div>
+  
+
+  <div class="concept">
+   <div class="concept-title">
+    <b>Utility of variables</b>
+   </div>
+   <div class="concept-description">
+      <p>
+        Variables can be useful in several ways in programing:       
+      </p>
+      <ul>
+          <li>They helps humans to have better undestanding of codes, improving their readability.</li>
+          <li>They are useful to store the value of important data.</li>
+          <li>They can be used to change somethings value (like in the line <span class="code">andre_age = andre_age+1</span></li>
+        </ul>
+    </div>
+  </div> 
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Strings, numbers and the sign <span class = "code">+</span></b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Strings are different than numbers in Python. <span class = "code">5</span> is a number, while <span class = "code">"5"</span> is a string.The meaning of <span class = "code">+</span> is different when used with numbers or strings.   
+      </p>  
+      <ul>
+          <li>The code <span class = "code">5 + 4</span> uses only numbers, it would return <span class = "code">9</span>. In this line the sign <span class = "code">+</span> <em>sums up</em> the numbers</li>
+          <li> The code <span class = "code">"5"+"4"</span> uses only strings, it would return <span class = "code">54</span>. In this line the <span class = "code">+</span> sign <em>concatenate</em> strings.  
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 3: INPUT -> FUNCTION -> OUTPUT</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Functions</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      <em>A function</em> is something that takes an <em>input</em> and produces an <em>output</em>. A function <span class = "code">square_meters</span>, for example, can take some data as inputs and return an output calculated in square meters.   
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Making and using functions</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        A programmer can create and use <em>functions</em> using computer language. A great part in programming is creating and defining functions - the inputs and desired outputs of a functions. Functions can be defined to receive an input and return an output. After being defined, a function can be used to return that defined output. For example: 
+      </p>
+      <ul>
+          <li>Defining functions: <br> <span class = "code">
+
+          def square(a):<br>
+          a = a * a<br>
+          return a<br></span></li>
+
+          <li> Using functions: <br> <span class = "code">print square(3)</span>. Using this function with the input 3 will return its square number 9</li>  
+      </ul>
+    </div>
+  </div>
+   
+  <div class="concept">
+   <div class="concept-title">
+    <b>Functions and <span class="code">return</span> statement</b>
+   </div>
+   <div class="concept-description">
+      <p>
+        The <span class="code">return</span> statement in a function tells the interpreter exactly what output the function should produce. A function without the <span class="code">return</span> statement will behave generating a <span class="code">None</span> output:       
+       <br> <span class = "code">
+
+          def square(a):<br>
+          a = a * a<br>
+          print square<br>
+          None</span>
+      </p>       
+    </div>
+  </div> 
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Using functions and avoidance of repetition</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        A programmer can create functions and use it as much as he wants - once it is defined, it does not have to be again defined. This tool can help a programmer avoid repetition more easily. 
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 4: DECISIONS AND REPETITION: IF AND WHILE</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Decision making and repetition</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      <em>Decision making and repetition</em> are two important programmer tools, envolving procedural thinking. The <span class = "code">if</span> statement can be used for decision making, controlling which code gets executed when; and the <span class = "code"> while</span> statement can be used for repetition, creating loops so the code performs the same task many times.
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Decisions, comparisons and the <span class = "code">if</span> statement.</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        <em>Comparisons</em> can be used to make <em>decision</em>: comparisons are a way to test and decide what to do. Python provides many different operators for comparisons (ex: &lt><<=&gt). A comparison returns a Boolean value, <em>True or False</em>. Equality comparisons are done with double equals <span class = "code">==</span>, beacause a single equal <span class = "code">=</span> means assignment, as seen before. The non-equality comparison with  <span class = "code">!=</span>.  
+      </p>
+       <p>
+        Based on a<em>comparison</em>, the <span class = "code">if</span> statement can be used to make the code do something different depending on the input. The <span class = "code">if</span> statement is build using a <em>test expression</em> and a block of code: if the test expression is <em>True</em>, then the block of code runs; if the expression is not true, the interpreter follows to the next line of not indented code. That way it is possible, giving the input, to make the machine make decisions based on code.  
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+   <div class="concept-title">
+      <b>Repetition, <span class="code">while</span> and <span class="code">break</span> statements</b>
+    </div>
+   <div class="concept-description">
+      <p>
+        For repetition it is possible to use the <span class="code">while</span> statement. As long as the <em>test expression</em> is <em>True</em> the code will continue running; once it is false, the code passes to the next step. 
+      </p> 
+      <p>
+        The <span class="code">break</span> statement lets stop the loop, even thought the expression is true.
+      </p>     
+    </div>
+  </div> 
+   
+  <div class="concept">  
+   <div class="concept-title">
+      <b><span class="code">or</span> statement</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        The <span class="code">or</span> statement can be used to evaluate two expressions.  <span class="code">or</span> only evaluates what it needs to. If one expression is true, and the other one is an error, the function will return true.  if the first expression evaluates to true, the value is true and the second expression is not evaluated. If the value of the first expression is false, than the value of the or construct is the value of the second expression. 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Debbuging</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Debugging is a crucial process in programing. Every code has bugs, so it is necessary a method for eliminating them more efficiently. Sometimes the code crashes, showing an error. Sometimes the error line gives some information about the bug in code.  
+      </p>
+      <p>
+        Often to make code a programmer look to a model code, to have a model to what to write, but change then to do what they want. If the code does not work, first try to do random changes on the code, and then when that does not work, ask for help. When a code does not work, copy and paste the model, put a tag in front of your code, to make a not readable line. Work the model, and then modify it in slow paces (baby steps), to do want you want it to do. Once you are done, try to see where the bug was on the first code. Care must be exercised to work with model codes, or bugs can be inherited from it.  
+      </p>
+      <p>
+        Some bugs do not crash the program. Give incorrect outputs. In this case the function must be splited up into smaller pieces, to look into how those pieces are working. Sometimes putting print statements inbetween the functions give good results.  
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="lesson">
+  <div class="lesson-title">
+    <b>LESSON 5: STRUCTURED DATA: LISTS AND FOR LOOPS</b>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>lists and strings</b>
+    </div>
+    <div class="concept-description">
+     <p>
+      <em>Lists</em> and <em>strings</em> are sets of <em>structured data</em>. They both can be used to operate objects inside of them, but they are essencially different. Strings can only store sequence of characters, while lists can store sequences of anything (characters, numbers, strings or other lists). To create a list, instead of using quotes, like to create a string, it is used square brackets. 
+    </p>
+
+    <p> The general grammar for constructing a list is: <br>
+     <span class = 'code'> <...> = [<...>, <...>,...]</span> 
+
+    <p> Lists can be stored in variables, as strings.<br>
+     <span class = 'code'> p = [1,2,3,4,5] </span>
+    </p>
+
+    <p>
+      Like in strings, square brackets can be used to select elements of the list.<br>
+      <span class = 'code'> p[0] -> 1</span>
+    </p>
+
+    <p>
+      The signal <span class = 'code'>:</span> can be used to select multiple elements in a list. This command will return a list containing those elements, and not a substring (like in strings): <br>
+      <span class = 'code'> p[0:2] -> [1,2,3]</span>
+    </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Nested lists</b>
+    </div>
+    <div class = "concept-description">
+      <p>
+        Different types of elements can be mixed in a list, including lists. This can be used for many purposes, like storing different kinds of information in the same place.   
+      </p>
+       <p>
+        Ex: <br>
+        <span class = 'code'>Beatles = [['john', 1940], ['Paul', 1942],['George', 1945], ['Ringo', 1940]]</span>  
+      </p>
+    </div>
+  </div>
+   
+  <div class="concept">
+   <div class="concept-title">
+      <b>Mutation</b>
+    </div>
+   <div class="concept-description">
+      <p>
+        Lists supports mutation, different from strings. By this process a value of a list can be changed after created.  When a variable is assigned to a new string, it don´t change the old one, just assign the variable to a new one. The plus operator also creates a new string, and does not change the old one. In lists the elements itself can be changed. This is called <em>mutation</em>. 
+      </p> 
+      
+      <p>
+        Ex: <br>
+        <span class="code">p = ['H','e','l','l','o']<br>
+        p[0] = 'Y'</span>. <br>
+        This code changes the value 'H' in the list to 'Y'. 
+      </p> 
+
+      <p>
+        Mutation is specially important when another variable is introduced. For example: <br>
+        Considering the last list created, the code <span class'code'>q = p</span> makes the two variables refer to the same list. The code <span class'code'>q[4] = '!'</span> changes a value referred in a list referred by q. If the value of the element in the list in q is changed, the value is also changed in p. The fact that p and q refer to the same object, changes the value of p.
+      </p>
+
+      <p> 
+        Lists are mutable objects, while strings are immutable ones.
+      </p>
+    </div>
+  </div> 
+   
+  <div class="concept">  
+   <div class="concept-title">
+      <b>Aliasing</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        When there is at least two ways to refer to the same object, that is called <em>aliasing</em>. Just like an alias (the secret agent is james bond and 007. Both are ways to refer to the same person. Whatever state that person has, also the two names have). If there is two variable names referring to a same object, any change made to the object one refers to, also affects the value that the other refers to.  
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>List operations</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        As seen, lists can be used to store complex data. There are operations that can be made with lists. One of them is <span class = 'code'>append</span>. It is a method to add a new element to the end of the list, mutating the list that is invoked on. It is not creating a new list, but mutating an old list. For example: <br>
+         <div class = 'code'>brothers.append('Caio')</div> This code will add 'Caio' at the end of the original list of my brothers, mutating it.  
+      </p>
+      <p>
+       The <em>plus</em> <span class = 'code'>(+)</span> operator works very similar from the concatenation operation for strings. Plus produces a new list from the concatenation of elements on the old lists, but don´t change the old ones.<br>
+       <span class = 'code'>[0,1] + [2,3] = [0,1,2,3]</span>. This code creates a new list from the concatenation of the old ones.    
+      </p>
+      <p>
+        The <span class = 'code'>len</span> operator, short for length, can be used to show the length of the object. It also works for strings, anything that is a collection of thing. <br>  
+        <span class = 'code'>Len([1,2] = 2</span>. This code shows the length of the list. 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>For loops</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        A <em>for loop</em> permits looping through the elements of a list. Loops on lists function a lot alike other loops, which uses the while operator, but with much less code. The general grammar for <em>for loops</em> is:<br>
+        <span class = 'code'> 
+        for <...> in <...>:<br>
+        </span>
+      </p>   
+      
+      <p>
+        This operation can be used to print all elements in a list, for example:<br>
+        <span class = 'code'>
+        Def print_all_elements(p):<br>
+            for e in p:<br>
+            Print e</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Index method</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        The <em>index</em> method is a way to find elements on a list.  permits looping through the elements of a list. The index method is invoked on a list, and the output is the position of the element in that list. It always gives the position the element appears the first time. If the list does not contain the searched object, then the output is an error (element is not in list).
+     </p>
+
+     <p>
+       ex:<br>
+       <span class = 'code'>
+        p = [0,1,2] <br>
+        print p.index(2) <br>
+        output: 2 <br>
+        p = [0,1,2,2,2,2,2] <br>
+        print p.index(2) <br>
+        output: 2 </span>
+      </p>   
+    </div>  
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>In operator</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        The <em>in</em> operator means to have a value in a list. If the value is in the list, the output is true. Otherwise, output is false.
+     </p>
+
+     <p>
+       ex:<br>
+       <span class = 'code'>
+        3 in p <br>
+        p= [0,1,2] <br>
+        False <br>
+        </span>
+      </p>  
+
+      <p>
+        The <em>not in</em> operator is opposed to in. If the value is in the list, the output is false. Otherwise, output is True. 
+      </p>
+    </div>
+  </div>
+
+  <div class="concept">
+    <div class="concept-title">
+      <b>Solving problems</b>
+    </div>
+    <div class="concept-description">
+      <p>
+        Solving problems is a skill that can be applied in many areas. To properly solve a problem, first ir it necessary to undestand it. All computational problems have inputs and desired outputs. A problem is defined by the set possible inputs (for most complex problems, generally an infinite set) and the relationship between inputs and outputs. The solution to the problem is a procedure that can take any input in that set, and produces the desired output that satisfies the wanted relationship. There are some steps to take.
+     </p>
+
+     <ul>
+        <li>0. Do not panic!</li>
+        <li>1. What are the inputs?: this leads to he question of how are inputs represented.</li>
+        <li>2. What are the outputs?</li>
+        <li>3. Work through some examples by hand</li>
+        <li>4. Simple mechanical solution</li>
+        <li>5. Develop incrementally and test as we go</li>
+      </ul>
+    </div>  
+  </div>  
+</div>
+
+</body>
+
+</html>
+</body>
+
+</html>
